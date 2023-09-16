@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnPrimerEjercicio = (Button)findViewById(R.id.btnPrimerEjercicio);
         Button btnSegundoEjercicio = (Button)findViewById(R.id.btnSegundoEjercicio);
+        Button btnTercerEjercicio = (Button)findViewById(R.id.btnTercerEjercicio);
         btnPrimerEjercicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, SegundoEjercicio.class));
+            }
+        });
+        btnTercerEjercicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TercerEjercicio.class));
             }
         });
 

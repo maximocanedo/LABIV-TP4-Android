@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cPr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TercerEjercicio">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/txtTituloSeleccionMultiple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selección Múltiple"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/txtElijaOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elija un sistema operativo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioWindows"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Windows" />
+
+                <RadioButton
+                    android:id="@+id/radioMac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mac" />
+
+                <RadioButton
+                    android:id="@+id/radioLinux"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Linux" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elija especialidad" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbProgramacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programación" />
+
+                <CheckBox
+                    android:id="@+id/cbAdministracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Administración" />
+
+                <CheckBox
+                    android:id="@+id/cbDGrafico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diseño Gráfico" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" >
+
+            <EditText
+                android:id="@+id/txtCantHorasPC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cantidad de horas en el ordenador"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" >
+
+            <Button
+                android:id="@+id/btnAceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
