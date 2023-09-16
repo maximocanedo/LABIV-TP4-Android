@@ -2,8 +2,130 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/primerEjercicioActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PrimerEjercicio">
 
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="48dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tViewContactos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contactos" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Número de teléfono"
+                android:inputType="phone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <EditText
+                android:id="@+id/txtFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Fecha de nacimiento"
+                android:inputType="date" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/btnMostrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mostrar" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp" />
+
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
