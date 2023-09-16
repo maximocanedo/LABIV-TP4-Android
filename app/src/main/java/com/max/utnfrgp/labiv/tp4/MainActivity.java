@@ -14,13 +14,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnprimerEjercicio = (Button)findViewById(R.id.btnPrimerEjercicio);
-        btnprimerEjercicio.setOnClickListener(new View.OnClickListener() {
+        Button btnPrimerEjercicio = (Button)findViewById(R.id.btnPrimerEjercicio);
+        Button btnSegundoEjercicio = (Button)findViewById(R.id.btnSegundoEjercicio);
+        btnPrimerEjercicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, PrimerEjercicio.class));
             }
         });
+        btnSegundoEjercicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SegundoEjercicio.class));
+            }
+        });
+
 
     }
 }
